@@ -73,15 +73,131 @@ class exercicio:
         print("A média dos valores é:", media)
 
 
-    def ex5(self):
-        nota1 = 64
-        nota2 = 45
-        nota3 = 60 
-        if (nota1,nota2,nota3 <= 60):
+    def ex5(self, nota):
+        if (nota <= 60):
             print("Reprovado")
         else:
             print("Aprovado")
-        
+
+
+    def ex6(self, nota):
+        if (nota < 60):
+            print("Aluno reprovado")
+        else:
+            print("Aluno aprovado")
+        if (nota > 80):
+            print("Aluno foi aprovado com certificado")
+
+    
+    def ex7(self):
+        lista=[1,2,3,4,5]
+        print(lista[0])
+        print(lista[1])
+        print(lista[2])
+        print(lista[3])
+        print(lista[4])
+
+
+    def ex8(self):
+        notas = [0]
+        notas[0] = 80
+        notas.append(60)
+        notas.append(30)
+        notas.append(40)
+        notas.append(80)
+        notas.append(90) 
+        print("Notas:", notas)
+        notas.pop()
+        notas.pop()
+        print("Notas após remover os 2 últimos elementos:", notas)
+
+
+    def ex9(self, notas):
+        if (notas < 60):
+            print("A nota é menor que 60")
+        elif notas <= 60:
+            print("A nota é igual a 60")
+        else:
+            print("A nota é maior que 60")
+            
+
+    def ex10(self):
+        lista1 = [1, 3, 5, 7]
+        lista2 = [2, 4, 6, 8, 10, 12]
+        lista3 = [10, 20, 30]
+        lista4 = [11, 22, 33, 44, 55, 66, 77]
+        lista5 = [70, 60, 50, 40, 30 ,20, 10, 5, 0]
+        print("lista 1")
+        for item in lista1:
+         print(item)
+        print("lista 2")
+        for elemento in lista2:
+         print(elemento)
+        print("lista 3")
+        for elemento in lista3:
+         print(elemento)
+        print("lista 4")
+        for elemento in lista4:
+         print(elemento)
+        print("lista 5")
+        for elemento in lista5:
+         print(elemento)
+
+
+    def ex11(self):
+       notas_escolares = [85, 42, 78, 90, 55, 60, 49, 73, 88, 35]
+       for  item  in notas_escolares:
+        if (item > 60):
+          print("Aprovado")
+        else:
+           print("Reprovado")
+
+
+    def ex12(self):
+       notas_escolares = [85, 42, 78, 90, 55, 60, 49, 73, 88, 35]
+       for  item  in notas_escolares:
+        if (item < 60):
+            print("Aluno reprovado")
+        else:
+            print("Aluno aprovado")
+        if (item > 80):
+            print("Aluno foi aprovado com certificado")
+
+
+    def ex13(self, fruta):
+       print(fruta)
+       
+
+    def ex14(self, valor1, valor2):
+       print("O primeiro valor é:", valor1)
+       print("O segundo valor é:", valor2)
+
+
+    def ex15(self, nomeAluno , idade , nota1, nota2):
+       print("O nome do aluno é", nomeAluno)
+       print("O aluno tem", idade, "anos")
+       print(nota1, "é a primeira nota do aluno")
+       print(nota2, "é a segunda nota do aluno")
+
+
+    def ex16(self, nomeAluno, idade , nota1, nota2, nota3):
+       soma = nota1 + nota2 + nota3
+       print("A soma das notas do aluno", nomeAluno, "é:", soma)
+       if (soma > 180):
+          print("Aluno aprovado")
+       else:
+           print("Aluno reprovado")
+       
+       
+
+
+       
+            
+
+
+  
+
+    
 
 
    
@@ -93,6 +209,31 @@ ex.ex1()
 ex.ex2()
 ex.ex3()
 ex.ex4()
-ex.ex5()
+ex.ex5(64)
+ex.ex5(45)
+ex.ex5(60)
+ex.ex6(90)
+ex.ex6(70)
+ex.ex6(50)
+ex.ex7()
+ex.ex8()
+notas = [60,55,80,90,59,30]
+ex.ex9(notas[0])
+ex.ex9(notas[1])
+ex.ex9(notas[2])
+ex.ex9(notas[3])
+ex.ex9(notas[4])
+ex.ex9(notas[5])
+ex.ex10()
+ex.ex11()
+ex.ex12()
+ex.ex13("uva")
+ex.ex14(14, 50)
+ex.ex15("Gabriel", 17, 90, 100)
+ex.ex16("Gabriel", 17, 90, 100, 80)
+
+
+
+
 
     
